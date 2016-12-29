@@ -66,3 +66,7 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c99 -DSQLITE_CORE=1")
 * * *
 ends;
 
+
+parse.c 跟 parse.h的代码 是使用了LEMON程序根据parse.y生成的。
+
+
