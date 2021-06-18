@@ -7,3 +7,4 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}) #like gcc: -I
 file(GLOB sources "*.c")
 file(GLOB headers "*.h")
 add_executable(sqlite3 ${sources} ${headers})
+target_link_libraries(sqlite3 ${CMAKE_DL_LIBS} -lpthread)
